@@ -1,0 +1,73 @@
+# Linux
+*~
+.Trash-*
+
+# Windows
+*.lnk
+[Td]humbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+._*
+
+# Generated files
+/build/
+/gen/
+/out/
+/tmp/
+
+# CMake
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# Gradle
+.gradle/
+local.properties
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+Session.vim
+[._]*.un~
+
+# VisualStudioCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Android
+keystore.properties
+*.jks
+
+# JavaScript
+.npm
+node_modules/
+
+# Python
+__pycache__/
+.venv/
+.tox/
+.coverage
+.pytest_cache/
+
+# Maya
+.mayaSwatches/
+*.fbm/
+

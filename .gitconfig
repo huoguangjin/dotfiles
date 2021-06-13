@@ -1,0 +1,37 @@
+[user]
+	name = huoguangjin
+	email = 352886006@qq.com
+[core]
+	precomposeUnicode = true
+	excludesfile = ~/dotfiles/.gitignore_global
+	autocrlf = input
+	quotepath = false
+	safecrlf = warn
+	eol = lf
+[url "ssh://git@github.com/"]
+	insteadOf = http://github.com/
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[push]
+	default = current
+[alias]
+	lg = log --graph --decorate --abbrev-commit --date='format-local:%Y/%m/%d %H:%M %a' --format=format:'%C(yellow)%h%C(reset)%C(auto)%D%C(reset) %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset) - %C(magenta)%an%C(reset) %n%C(white)%s%C(reset)' --all
+	d = difftool
+	s = submodule update --init --recursive
+[log]
+	date = format-local:%Y/%m/%d %H:%M
+[format]
+	pretty = format:%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(bold blue)%ad(%ar)%C(reset) %C(magenta)%an%C(reset) %C(white)%s%C(reset)
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+	trustExitCode = true
+[pull]
+	ff = only
+	rebase = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
