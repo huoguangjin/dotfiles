@@ -36,6 +36,16 @@ export PATH=$PATH:$FZF_DIR/bin
 # sublime text
 export SUBL="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
+# python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+# pipx
+export PATH="$PATH:$HOME/.local/bin"
+export PIPX_DEFAULT_PYTHON=$(pyenv which python)
+
 # node
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
