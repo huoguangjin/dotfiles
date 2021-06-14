@@ -44,9 +44,8 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export JAVA_8=$(/usr/libexec/java_home -v1.8 2> /dev/null) # jdk 1.8.0_181
 export JAVA_11=$(/usr/libexec/java_home -v11 2> /dev/null) # jdk 11.0.10
 
-# export JAVA_HOME=/Library/Java/Home
 # export JAVA_HOME=$JAVA_11
-export JAVA_HOME=$JAVA8_HOME
+export JAVA_HOME=$JAVA_8
 export JRE_HOME=$JAVA_HOME/jre
 export CLASSPATH=$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
 export PATH=$PATH:$JAVA_HOME/bin
