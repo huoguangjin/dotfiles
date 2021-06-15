@@ -1,0 +1,7 @@
+
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+export RIPGREP_CONFIG_PATH=$DOTFILES/.ripgreprc
+
+# export PYENV_ROOT="$DOTFILES/.pyenv"
+
