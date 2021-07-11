@@ -1,0 +1,364 @@
+{
+  "title": "fn + letter -> left_command + left_control + left_option + left_shift + letter",
+  "maintainers": [
+    "hgj"
+  ],
+  "rules": [
+    {
+      "description": "fn + letter -> left_command + left_control + left_option + left_shift + letter",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "a",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "b",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "b",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "c",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "d",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "e",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "f",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "g",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "g",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "h",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "h",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "i",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "j",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "j",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "k",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "l",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "m",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "m",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "n",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "n",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "o",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "o",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "p",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "p",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "q",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "r",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "r",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "s",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "s",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "t",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "t",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "u",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "u",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "v",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "v",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "w",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "w",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "x",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "x",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "y",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "z",
+            "modifiers": {"mandatory": ["fn"], "optional": ["any"]}
+          },
+          "to": [
+            {
+              "key_code": "z",
+              "modifiers": ["left_command", "left_control", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

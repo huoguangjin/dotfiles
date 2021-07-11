@@ -1,0 +1,28 @@
+{
+  "title": "equal_sign + delete -> forward_delete",
+  "maintainers": [
+    "hgj"
+  ],
+  "rules": [
+    {
+      "description": "equal_sign + delete -> forward_delete",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {"key_code": "equal_sign"},
+              {"key_code": "delete_or_backspace"}
+            ],
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {"key_code": "delete_forward"}
+          ]
+        }
+      ]
+    }
+  ]
+}

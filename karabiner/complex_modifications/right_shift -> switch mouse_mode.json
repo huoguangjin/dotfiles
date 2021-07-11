@@ -1,0 +1,262 @@
+{
+  "title": "right_shift -> switch mouse_mode",
+  "maintainers": [
+    "hgj"
+  ],
+  "rules": [
+    {
+      "description": "right_shift -> switch mouse_mode",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 0}
+          ],
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {"optional": ["any"]}
+          },
+          "to": [
+            {"key_code": "right_shift"}
+          ],
+          "to_if_alone": [
+            {"set_variable": {"name": "mouse_mode", "value": 1}},
+            {"shell_command": "afplay /System/Library/Sounds/Funk.aiff"}
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {"optional": ["any"]}
+          },
+          "to": [
+            {"key_code": "right_shift", "lazy": true}
+          ],
+          "to_if_alone": [
+            {"set_variable": {"name": "mouse_mode", "value": 0}},
+            {"shell_command": "afplay /System/Library/Sounds/Tink.aiff"}
+          ]
+        },
+
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {"key_code": "s"},
+          "to": [
+            {"set_variable": {"name": "mouse_scroll_mode", "value": 1}}
+          ],
+          "to_after_key_up": [
+            {"set_variable": {"name": "mouse_scroll_mode", "value": 0}}
+          ]
+        },
+
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "f"
+          },
+          "to": [
+            {"mouse_key": {"speed_multiplier": 2.4}}
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "d"
+          },
+          "to": [
+            {"mouse_key": {"speed_multiplier": 0.5}}
+          ]
+        },
+
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1},
+            {"type": "variable_if", "name": "mouse_scroll_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "i"
+          },
+          "to": [
+            { "mouse_key": { "vertical_wheel": -60 } }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1},
+            {"type": "variable_if", "name": "mouse_scroll_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "k"
+          },
+          "to": [
+            { "mouse_key": { "vertical_wheel": 60 } }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1},
+            {"type": "variable_if", "name": "mouse_scroll_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "j"
+          },
+          "to": [
+            { "mouse_key": { "horizontal_wheel": 48 } }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1},
+            {"type": "variable_if", "name": "mouse_scroll_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "l"
+          },
+          "to": [
+            { "mouse_key": { "horizontal_wheel": -48 } }
+          ]
+        },
+
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "i"
+          },
+          "to": [
+            {"mouse_key": {"y": -1536}}
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "k"
+          },
+          "to": [
+            {"mouse_key": {"y": 1536}}
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "j"
+          },
+          "to": [
+            {"mouse_key": {"x": -2048}}
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "l"
+          },
+          "to": [
+            {"mouse_key": {"x": 2048}}
+          ]
+        },
+
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "u"
+          },
+          "to": [
+            { "mouse_key": { "vertical_wheel": -60 } }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "o"
+          },
+          "to": [
+            { "mouse_key": { "vertical_wheel": -60 } }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "h"
+          },
+          "to": [
+            { "mouse_key": { "vertical_wheel": 60 } }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "semicolon"
+          },
+          "to": [
+            { "mouse_key": { "vertical_wheel": 60 } }
+          ]
+        },
+
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "n"
+          },
+          "to": [
+            {"pointing_button": "button1"}
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {"type": "variable_if", "name": "mouse_mode", "value": 1}
+          ],
+          "from": {
+            "key_code": "m"
+          },
+          "to": [
+            {"pointing_button": "button2"}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "shift + delete -> forward_delete (old)",
+  "maintainers": [
+    "hgj"
+  ],
+  "rules": [
+    {
+      "description": "shift + delete -> forward_delete (old)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "delete_or_backspace",
+            "modifiers": {
+              "mandatory": ["shift"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {"key_code": "delete_forward"}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "title": "left_shift + caps_lock -> caps_lock",
+  "maintainers": [
+    "hgj"
+  ],
+  "rules": [
+    {
+      "description": "left_shift + caps_lock -> caps_lock",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "caps_lock"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
