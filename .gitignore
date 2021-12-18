@@ -25,4 +25,4 @@ tx.sh
 
 # Local
 .oh-my-zsh
-
+.ipython/**/history.sqlite
