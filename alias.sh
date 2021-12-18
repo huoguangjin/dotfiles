@@ -33,6 +33,7 @@ alias xargs="xargs -tp"
 
 alias v="vim"
 alias vi="vim"
+alias r="ranger -r $DOTFILES/.ranger"
 # alias open="open ."
 # alias item="open -a iTerm"
 # alias st="open -a Sublime\ Text"
