@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
 
 pipx install poetry
 poetry config virtualenvs.in-project true
