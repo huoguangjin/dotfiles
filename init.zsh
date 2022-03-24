@@ -1,4 +1,10 @@
 
+if [[ -x /opt/homebrew/bin/brew ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -x /opt/local/bin/brew ]]; then
+  eval "$(/opt/local/bin/brew shellenv)"
+fi
+
 export DOTFILES="$(dirname "$0")"
 # export XDG_CONFIG_HOME="$DOTFILES"
 

@@ -3,36 +3,6 @@ export EDITOR=vim
 
 export LD_LIBRARY_PATH=/usr/local/lib
 
-# binary file
-export BIN_DIR="/usr/local/opt"
-
-# rust
-export PATH="$PATH:$HOME/.cargo/bin"
-
-# ruby
-export RUBY_HOME=$BIN_DIR/ruby
-export PATH="$PATH:$RUBY_HOME/bin"
-
-# perl
-# export PERL_HOME=$BIN_DIR/perl
-# export PATH=$PATH:$PERL_HOME/bin
-
-# kotlinc
-# export KOTLINC_HOME=/Applications/IntelliJ\ IDEA.app/Contents/plugins/Kotlin/kotlinc
-# export PATH=$PATH:$KOTLINC_HOME/bin
-
-# gradle
-# export GRADLE_HOME=$BIN_DIR/gradle
-# export PATH=$PATH:$GRADLE_HOME/bin
-
-# maven
-# export MAVEN_HOME=$BIN_DIR/maven
-# export PATH=$PATH:$MAVEN_HOME/bin
-
-# fzf
-export FZF_DIR=$BIN_DIR/fzf
-export PATH=$PATH:$FZF_DIR/bin
-
 # sublime text
 export SUBL="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
