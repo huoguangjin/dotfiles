@@ -17,7 +17,7 @@ source $DOTFILES/env.sh
 source $DOTFILES/fun.sh
 
 # $(brew --prefix fzf)/install
-source $DOTFILES/fzf.zsh
+source $HOME/.config/fzf/fzf.zsh
 source $DOTFILES/fzf_fun.sh
 
 [ -f $DOTFILES/tx.sh ] && source $DOTFILES/tx.sh
