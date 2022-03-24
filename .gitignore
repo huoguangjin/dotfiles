@@ -20,6 +20,8 @@ $RECYCLE.BIN/
 Session.vim
 [._]*.un~
 
+.idea/
+
 # Tencent
 tx.sh
 
