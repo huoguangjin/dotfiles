@@ -1,0 +1,16 @@
+
+let $VIM_CONFIG_PATH = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+" echomsg "VIM_CONFIG_PATH=" . $VIM_CONFIG_PATH
+
+fun! s:source_file(path, ...)
+  let abs_path = $VIM_CONFIG_PATH . '/' . a:path
+  exe 'source' fnameescape(abs_path)
+endfun
+
+call s:source_file('basic.vim')
+call s:source_file('map.vim')
+call s:source_file('plugin.vim')
+
+" colorscheme darcula
+
+" vim: set ts=2 sts=2 sw=2 et :
