@@ -4,10 +4,12 @@ set -euo pipefail
 cli=(
   git
   git-lfs
+  coreutils
   # svn
   vim
   wget
   tree
+  ag
   rg
   fd
   fzf
