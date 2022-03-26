@@ -1,0 +1,60 @@
+Preferences > General > Sidebar icon size > Small
+Preferences > General > Default web browser
+Preferences > General > Recent items > None
+
+
+Preferences > Desktop & Screen Saver > Show screen saver after
+
+
+Preferences > Sound > Sound Effects > Play sound on startup
+
+
+Preferences > Language & Region > General > 24-Hour Time
+
+
+Preferences > Mission Control > Keyboard and Mouse Shortcuts
+Preferences > Mission Control > Hot Corners...
+
+
+Preferences > Dock & Menu Bar > Dock & Menu Bar > Dock > Size
+Preferences > Dock & Menu Bar > Dock & Menu Bar > Minimize windows using > Scale effect
+Preferences > Dock & Menu Bar > Dock & Menu Bar > Minimize windows into application icon
+Preferences > Dock & Menu Bar > Dock & Menu Bar > Automatically hide and show the Dock
+Preferences > Dock & Menu Bar > Dock & Menu Bar > Automatically hide and show the menu bar on desktop
+
+Preferences > Dock & Menu Bar > Battery > Show Percentage
+
+Preferences > Dock & Menu Bar > Spotlight > Show in Menu Bar
+
+
+Preferences > Keyboard > Keyboard > Delay Until Repeat > Short
+Preferences > Keyboard > Keyboard > Key Repeat > Fast
+Preferences > Keyboard > Keyboard > Adjust keyboard brightness in low light
+Preferences > Keyboard > Keyboard > Press fn key to Do Nothing
+Preferences > Keyboard > Keyboard > Use F1, F2, etc.
+
+Preferences > Keyboard > Text > Correct spelling automatically
+Preferences > Keyboard > Text > Capitalize words automatically
+Preferences > Keyboard > Text > Add period with double-space
+
+Preferences > Keyboard > Input Sources > Automatically switch to a document's input source
+
+Preferences > Keyboard > Dictation > Off
+
+
+Preferences > Trackpad > Point & Click > Tap to click
+Preferences > Trackpad > Point & Click > Tracking speed
+
+Preferences  > Trackpad > More Gestures > Notification Center
+Preferences  > Trackpad > More Gestures > Mission Control
+Preferences  > Trackpad > More Gestures > App Expose
+
+
+Preferences > Accessibility > Display > Display > Reduce motion
+Preferences > Accessibility > Display > Display > Reduce transparency
+
+Preferences > Accessibility > Pointer Control > Mouse & Trackpad > Trackpad Options... > Enable dragging > three finger drag
+
+
+Preferences > Sharing > Computer Name
+Preferences > Sharing > AirPlay Receiver
