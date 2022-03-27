@@ -17,7 +17,7 @@ function run(argv) {
   const app = Application.currentApplication();
   app.includeStandardAdditions = true;
 
-  const exe = "/usr/local/bin/subl";
+  const exe = "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl";
   const cmd = `"${exe}" -n "${dir}" ${files.join(' ')}`;
   // console.log(`cmd=${cmd}`);
   app.doShellScript(cmd);
