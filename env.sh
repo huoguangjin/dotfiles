@@ -17,7 +17,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export PIPX_DEFAULT_PYTHON=$(pyenv which python)
 
 # node
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+export PATH=$PATH:$HOME/.yarn/bin
 
 # export JAVA6_HOME=$(/usr/libexec/java_home -v1.6 2> /dev/null) # jdk 1.6.0_65
 # export JAVA7_HOME=$(/usr/libexec/java_home -v1.7 2> /dev/null) # jdk 1.7.0_80
