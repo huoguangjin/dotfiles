@@ -46,7 +46,7 @@ alias tree2="tree -L 2"
 alias tree3="tree -L 3"
 alias tree4="tree -L 4"
 #alias sd="sudo $(history \!\!)"
-alias f="/usr/local/bin/fd"
+alias f="command fd"
 # -i: ignore case, -I: ignore binary-file
 alias grep="grep --color="auto" -iI"
 
