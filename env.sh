@@ -31,7 +31,7 @@ export CLASSPATH=$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
 export PATH=$PATH:$JAVA_HOME/bin
 
 # android
-export ANDROID_HOME=$HOME/android/sdk
+export ANDROID_HOME=$HOME/sdk/android
 export android_home=$ANDROID_HOME
 # https://d.android.com/studio/command-line/variables
 export ANDROID_SDK_ROOT=$ANDROID_HOME
