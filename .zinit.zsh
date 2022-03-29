@@ -2,9 +2,6 @@
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
 
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
-autoload -Uz compinit && compinit
-
 # zinit snippet OMZ::lib/bzr.zsh
 # zinit snippet OMZ::lib/cli.zsh
 zinit snippet OMZ::lib/clipboard.zsh
@@ -34,11 +31,15 @@ zinit ice as="completion"
 zinit snippet OMZ::plugins/fd/_fd
 
 
-zinit light zsh-users/zsh-completions
 
-zinit light zsh-users/zsh-autosuggestions
+zinit wait lucid light-mode for \
+  atinit"zicompinit; zicdreplay" \
+  zdharma-continuum/fast-syntax-highlighting \
+  atload"_zsh_autosuggest_start" \
+  zsh-users/zsh-autosuggestions \
+  blockf atpull'zinit creinstall -q .' \
+  zsh-users/zsh-completions \
 
-# zinit cdclear -q
 
 setopt promptsubst
 zinit snippet OMZ::themes/bira.zsh-theme
