@@ -10,11 +10,10 @@ export SUBL="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 # pipx
 export PATH="$PATH:$HOME/.local/bin"
-export PIPX_DEFAULT_PYTHON=$(pyenv which python)
 
 # node
 export PATH=$PATH:$HOME/.yarn/bin
