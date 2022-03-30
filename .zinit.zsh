@@ -11,16 +11,13 @@ zinit snippet OMZ::lib/completion.zsh
 # zinit snippet OMZ::lib/diagnostics.zsh
 zinit snippet OMZ::lib/directories.zsh
 # zinit snippet OMZ::lib/functions.zsh
-zinit snippet OMZ::lib/git.zsh
 # zinit snippet OMZ::lib/grep.zsh
 zinit snippet OMZ::lib/history.zsh
 zinit snippet OMZ::lib/key-bindings.zsh
 # zinit snippet OMZ::lib/misc.zsh
 # zinit snippet OMZ::lib/nvm.zsh
-zinit snippet OMZ::lib/prompt_info_functions.zsh
 zinit snippet OMZ::lib/spectrum.zsh
 zinit snippet OMZ::lib/termsupport.zsh
-zinit snippet OMZ::lib/theme-and-appearance.zsh
 
 zinit snippet OMZ::plugins/git
 
@@ -41,8 +38,14 @@ zinit wait lucid light-mode for \
   zsh-users/zsh-completions \
 
 
+PS1="╭─$PS1
+╰─$ "
 setopt promptsubst
-zinit snippet OMZ::themes/bira.zsh-theme
+zinit wait'!' lucid for \
+  OMZ::lib/git.zsh \
+  OMZ::lib/prompt_info_functions.zsh \
+  OMZ::lib/theme-and-appearance.zsh \
+  OMZ::themes/bira.zsh-theme
 
 
 export LANG=en_US.UTF-8
