@@ -2,34 +2,26 @@
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
 
-# zinit snippet OMZ::lib/bzr.zsh
-# zinit snippet OMZ::lib/cli.zsh
-zinit snippet OMZ::lib/clipboard.zsh
-# zinit snippet OMZ::lib/compfix.zsh
-zinit snippet OMZ::lib/completion.zsh
-# zinit snippet OMZ::lib/correction.zsh
-# zinit snippet OMZ::lib/diagnostics.zsh
-zinit snippet OMZ::lib/directories.zsh
-# zinit snippet OMZ::lib/functions.zsh
-# zinit snippet OMZ::lib/grep.zsh
-zinit snippet OMZ::lib/history.zsh
-zinit snippet OMZ::lib/key-bindings.zsh
-# zinit snippet OMZ::lib/misc.zsh
-# zinit snippet OMZ::lib/nvm.zsh
-zinit snippet OMZ::lib/spectrum.zsh
 zinit snippet OMZ::lib/termsupport.zsh
 
-zinit snippet OMZ::plugins/git
-
-zinit ice as="completion"
-zinit snippet OMZ::plugins/ag/_ag
-
-zinit ice as="completion"
-zinit snippet OMZ::plugins/fd/_fd
-
-
-
 zinit wait lucid light-mode for \
+  OMZ::lib/clipboard.zsh \
+  OMZ::lib/completion.zsh \
+  OMZ::lib/directories.zsh \
+  OMZ::lib/history.zsh \
+  OMZ::lib/key-bindings.zsh \
+  OMZ::lib/spectrum.zsh \
+  \
+  OMZ::plugins/extract \
+  OMZ::plugins/git \
+  \
+  as"completion" \
+  OMZ::plugins/adb/_adb \
+  as"completion" \
+  OMZ::plugins/ag/_ag \
+  as"completion" \
+  OMZ::plugins/fd/_fd \
+  \
   atinit"zicompinit; zicdreplay" \
   zdharma-continuum/fast-syntax-highlighting \
   atload"_zsh_autosuggest_start" \
