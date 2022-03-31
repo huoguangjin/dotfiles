@@ -2,12 +2,18 @@
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
 
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushdminus
+
+setopt interactivecomments
+
+
 zinit snippet OMZ::lib/termsupport.zsh
 
 zinit wait lucid light-mode for \
   OMZ::lib/clipboard.zsh \
   OMZ::lib/completion.zsh \
-  OMZ::lib/directories.zsh \
   OMZ::lib/history.zsh \
   OMZ::lib/key-bindings.zsh \
   OMZ::lib/spectrum.zsh \
