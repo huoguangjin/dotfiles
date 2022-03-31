@@ -46,7 +46,4 @@ zinit wait'!' lucid for \
   OMZ::themes/bira.zsh-theme
 
 
-export LANG=en_US.UTF-8
-
 [ -f $HOME/dotfiles/init.zsh ] && source $HOME/dotfiles/init.zsh
-
