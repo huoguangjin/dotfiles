@@ -2,3 +2,4 @@
 
 source $HOME/dotfiles/.zinit.zsh
 
+# zprof
