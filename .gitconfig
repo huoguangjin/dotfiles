@@ -3,11 +3,11 @@
 	email = 352886006@qq.com
 [core]
 	precomposeUnicode = true
-	excludesfile = ~/dotfiles/.gitignore_global
 	autocrlf = input
 	quotepath = false
 	safecrlf = warn
 	eol = lf
+	pager = delta
 [url "git@github.com:"]
 	insteadOf = http://github.com/
 	insteadOf = https://github.com/
@@ -21,8 +21,11 @@
 	date = format-local:%Y/%m/%d %H:%M
 [format]
 	pretty = format:%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(bold blue)%ad(%ar)%C(reset) %C(magenta)%an%C(reset) %C(white)%s%C(reset)
+[merge]
+	conflictstyle = diff3
 [diff]
 	tool = vimdiff
+	colorMoved = default
 [difftool]
 	prompt = false
 	trustExitCode = true
@@ -34,3 +37,22 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[interactive]
+	diffFilter = delta
+[delta]
+	navigate = true
+	side-by-side = true
+	file-style = 232 bold 184
+	line-numbers-left-format = "│{nm:>1}│"
+	line-numbers-right-format = "│{np:>1}│"
+	line-numbers-left-style = gray
+	line-numbers-right-style = gray
+	line-numbers-minus-style = red black
+	line-numbers-plus-style = green black
+	line-numbers-zero-style = "#545474"
+	commit-decoration-style = bold box ul
+	file-decoration-style = gray overline
+	hunk-header-decoration-style = gray box ul
+	hunk-header-file-style = bold yellow
+	hunk-header-line-number-style = bold yellow
+	hunk-header-style = file line-number syntax
