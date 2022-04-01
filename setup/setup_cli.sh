@@ -15,7 +15,9 @@ cli=(
   fzf
   ranger
   bat
+  git-delta
   tldr
+  aria2
 
   pyenv
   pipx
@@ -53,4 +55,3 @@ cli_install() {
 }
 
 cli_install "${cli[@]}"
-
