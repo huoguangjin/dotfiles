@@ -8,9 +8,8 @@
 	quotepath = false
 	safecrlf = warn
 	eol = lf
-[url "ssh://git@github.com/"]
+[url "git@github.com:"]
 	insteadOf = http://github.com/
-[url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [push]
 	default = current
