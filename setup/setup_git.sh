@@ -1,20 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-export DOT_FILE="$(dirname $0)/.."
+export DOTFILES=$(cd "$(dirname "$0")/.."; pwd -P)
 
-backup_if_exist() {
-  local f=$1
-  if [ -e "$f" ]
-  then
-      echo ">> cp $f $DOT_FILE/backup"
-      cp "$f" "$DOT_FILE/backup"
-  fi
+add_git_config_if_absent() {
+  local name=$1
+  local value=$2
+  git config --global --get-all "$name" | grep "$value" &>/dev/null \
+    || git config --global --add "$name" "$value"
 }
 
-backup_if_exist $HOME/.gitconfig
-cp $DOT_FILE/.gitconfig $HOME
-
-backup_if_exist $HOME/.gitignore_global
-cp $DOT_FILE/.gitignore_global $HOME
-
+add_git_config_if_absent include.path $DOTFILES/.gitconfig
+add_git_config_if_absent core.excludesfile $DOTFILES/.gitignore_global
