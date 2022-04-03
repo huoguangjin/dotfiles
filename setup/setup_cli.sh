@@ -2,6 +2,7 @@
 set -euo pipefail
 
 cli=(
+  zsh
   git
   git-lfs
   coreutils
