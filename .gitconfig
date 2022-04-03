@@ -4,10 +4,15 @@
 [core]
 	precomposeUnicode = true
 	autocrlf = input
-	quotepath = false
+	quotePath = false
 	safecrlf = warn
 	eol = lf
 	pager = delta
+[init]
+	defaultBranch = main
+[i18n]
+	commitEncoding = utf-8
+	logOutputEncoding = utf-8
 [url "git@github.com:"]
 	insteadOf = http://github.com/
 	insteadOf = https://github.com/
@@ -22,7 +27,7 @@
 [format]
 	pretty = format:%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(bold blue)%ad(%ar)%C(reset) %C(magenta)%an%C(reset) %C(white)%s%C(reset)
 [merge]
-	conflictstyle = diff3
+	conflictStyle = diff3
 [diff]
 	tool = vimdiff
 	colorMoved = default
