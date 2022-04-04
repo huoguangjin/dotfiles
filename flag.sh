@@ -15,8 +15,6 @@ export PYTHONBREAKPOINT="ipdb.set_trace()"
 export IPYTHONDIR="$DOTFILES/.ipython"
 
 export PIPENV_VENV_IN_PROJECT=1
-# export PYENV_ROOT="$DOTFILES/.pyenv"
-# export POETRY_HOME=$HOME/.poetry
 
 # ranger
 export RANGER_LOAD_DEFAULT_RC=FALSE
