@@ -15,6 +15,8 @@
 # fda - cd to selected directory including hidden directories
 # fz - cd to the directory of selected file from z history
 
+bindkey '^G' fzf-cd-widget
+
 fz() {
   local out
   # IFS=$'\n' out=$(zsh $ZSH/plugins/z/z.sh -l | cut -c 12- | fzf -q "$1" -m --select-1  --height 40% \

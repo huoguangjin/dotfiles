@@ -4,7 +4,7 @@ set -euo pipefail
 $(brew --prefix fzf)/install \
   --xdg \
   --completion \
-  --no-key-bindings \
+  --key-bindings \
   --no-update-rc \
   --no-bash
 

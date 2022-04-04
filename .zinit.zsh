@@ -34,6 +34,7 @@ zinit wait lucid light-mode for \
   OMZ::lib/spectrum.zsh \
   \
   OMZ::plugins/extract \
+  OMZ::plugins/fzf \
   OMZ::plugins/git \
   \
   as"completion" \
