@@ -2,9 +2,11 @@
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
 
+setopt auto_cd
 setopt auto_pushd
 setopt pushd_ignore_dups
-setopt pushdminus
+setopt pushd_minus
+setopt multios
 
 setopt interactivecomments
 
@@ -25,6 +27,9 @@ fi' \
 zinit light zdharma-continuum/null
 
 zinit snippet OMZ::lib/termsupport.zsh
+
+zinit ice id-as'auto'
+zinit snippet $HOME/dotfiles/breeze.zsh-theme
 
 zinit wait lucid light-mode for \
   OMZ::lib/clipboard.zsh \
@@ -50,16 +55,6 @@ zinit wait lucid light-mode for \
   zsh-users/zsh-autosuggestions \
   blockf atpull'zinit creinstall -q .' \
   zsh-users/zsh-completions \
-
-
-PS1="╭─$PS1
-╰─$ "
-setopt promptsubst
-zinit wait'!' lucid for \
-  OMZ::lib/git.zsh \
-  OMZ::lib/prompt_info_functions.zsh \
-  OMZ::lib/theme-and-appearance.zsh \
-  OMZ::themes/bira.zsh-theme
 
 
 [ -f $HOME/dotfiles/init.zsh ] && source $HOME/dotfiles/init.zsh
