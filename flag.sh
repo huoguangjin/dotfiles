@@ -1,6 +1,8 @@
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
+
 # vim
 export VIMINIT="source $DOTFILES/vim/vimrc"
 
