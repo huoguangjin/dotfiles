@@ -1,4 +1,5 @@
-Preferences > General > Sidebar icon size > Small
+Preferences > General > Sidebar icon size > Medium
+Preferences > General > Click in the scroll bar to: Jump to the spot that's clicked
 Preferences > General > Default web browser
 Preferences > General > Recent items > None
 
@@ -40,6 +41,38 @@ Preferences > Keyboard > Text > Add period with double-space
 Preferences > Keyboard > Input Sources > Automatically switch to a document's input source
 
 Preferences > Keyboard > Dictation > Off
+
+Preferences > Keyboard > Shortcuts > Launchpad & Dock > Turn Dock Hiding On/Off > none
+Preferences > Keyboard > Shortcuts > Mission Control > cmd + F1
+Preferences > Keyboard > Shortcuts > Mission Control > Turn Do Not Disturb On/Off > none
+Preferences > Keyboard > Shortcuts > Mission Control > Move left a space > fn + A
+Preferences > Keyboard > Shortcuts > Mission Control > Move right a space > fn + S
+Preferences > Keyboard > Shortcuts > Mission Control > Quick Note > none
+Preferences > Keyboard > Shortcuts > Keyboard > Change the way Tab moves focus > none
+Preferences > Keyboard > Shortcuts > Keyboard > Turn keyboard access on or off > none
+Preferences > Keyboard > Shortcuts > Keyboard > Move focus to the menu bar > cmd + F3
+Preferences > Keyboard > Shortcuts > Keyboard > Move focus to the Dock > cmd + F5
+Preferences > Keyboard > Shortcuts > Keyboard > Move focus to active or next window > option + `
+Preferences > Keyboard > Shortcuts > Keyboard > Move focus to the window toolbar > none
+Preferences > Keyboard > Shortcuts > Keyboard > Move focus to the floating window > none
+Preferences > Keyboard > Shortcuts > Keyboard > Move focus to next window > none
+Preferences > Keyboard > Shortcuts > Keyboard > Move focus to status menus > cmd + F4
+Preferences > Keyboard > Shortcuts > Input Sources > Select the previous input source > control + space
+Preferences > Keyboard > Shortcuts > Input Sources > Select next source in Input menu > none
+Preferences > Keyboard > Shortcuts > Screenshots > Save picture of screen as a file > none
+Preferences > Keyboard > Shortcuts > Screenshots > Copy picture of screen to the clipboard > none
+Preferences > Keyboard > Shortcuts > Screenshots > Save picture of selected area as a file > cmd + shift + F4
+Preferences > Keyboard > Shortcuts > Screenshots > Copy picture of selrea to the clipboard > cmd + shift + F3
+Preferences > Keyboard > Shortcuts > Screenshots > Screenshot and recording options > cmd + shift + F5
+Preferences > Keyboard > Shortcuts > Services > Convert Text to Full Width > none
+Preferences > Keyboard > Shortcuts > Services > Convert Text to Half Width > none
+Preferences > Keyboard > Shortcuts > Services > Open man Page in Terminal > none
+Preferences > Keyboard > Shortcuts > Services > Search man Page Index in Terminal > none
+Preferences > Keyboard > Shortcuts > Services > 有道词典 > fn + D
+Preferences > Keyboard > Shortcuts > Services > ...
+Preferences > Keyboard > Shortcuts > Spotlight > Show Spotlight Search
+Preferences > Keyboard > Shortcuts > Spotlight > Show Finder Search window
+Preferences > Keyboard > Shortcuts > Accessibility > none
 
 
 Preferences > Trackpad > Point & Click > Tap to click
