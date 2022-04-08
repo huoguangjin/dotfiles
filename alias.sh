@@ -21,7 +21,11 @@ alias cd...="cd ../.."
 alias cdtmp="cd ~/tmp"
 alias cddot="cd ~/dotfiles"
 alias cdnote="cd ~/note"
+
+alias cp="cp -i"
+alias mv="mv -i"
 alias rm="safe-rm"
+
 alias ls="ls -G"
 alias sl="ls"
 alias lg="ls | grep"
