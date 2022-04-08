@@ -98,3 +98,16 @@ alias srv="svn revert -R"
 
 alias distinct="cat -n | sort -uk2 | sort -nk1 | cut -f2-"
 
+alias -g \\g="| grep"
+alias -g \\h="| head"
+alias -g \\b="| bat"
+alias -g \\l="| less"
+alias -g \\c="| clipcopy"
+alias -g \\t="| tee"
+alias -g \\v="| vim -"
+alias -g \\s="2>&1"
+
+alias -s zip="unzip -l"
+alias -s rar="unrar l"
+alias -s tar="tar tf"
+alias -s gz="tar tf"
