@@ -77,11 +77,20 @@ alias ipy="ipython"
 alias ipy2="ipython2"
 alias ipy3="ipython3"
 
-# alias gst="git status -sb"
-alias gd="git diff HEAD"
-alias glg="git log --graph --decorate --abbrev-commit --all"
-alias glgd="git log --graph --decorate --abbrev-commit --format=format:'%C(yellow)%h%C(reset) - %C(bold cyan)%cd%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n%C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias g="git"
+alias gd="git diff"
+alias gf="git fetch"
+alias gco="git checkout"
+alias gcp="git cherry-pick"
+alias gcl="git clean -xdfn"
 alias gitclone1="git clone --depth=1"
+alias glg="git log --graph --decorate --abbrev-commit --all"
+alias gls="git log --graph --stat" # -p: perview
+alias grb="git rebase"
+alias grs="git restore"
+alias grss="git restore --staged"
+alias gsh="git show"
+alias gst="git status" # -s: summary
 
 alias cnpm="npm --registry=https://registry.npm.taobao.org --cache=$HOME/.npm/.cache/cnpm --disturl=https://npm.taobao.org/dist --userconfig=$HOME/configfile/.cnpmrc"
 

@@ -40,7 +40,6 @@ zinit wait lucid light-mode for \
   \
   OMZ::plugins/extract \
   OMZ::plugins/fzf \
-  OMZ::plugins/git \
   \
   as"completion" \
   OMZ::plugins/adb/_adb \
