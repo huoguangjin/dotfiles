@@ -27,6 +27,7 @@
 [format]
 	pretty = format:%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(bold blue)%ad(%ar)%C(reset) %C(magenta)%an%C(reset) %C(white)%s%C(reset)
 [merge]
+	tool = smerge
 	conflictStyle = diff3
 [diff]
 	tool = vimdiff
@@ -43,7 +44,7 @@
 	process = git-lfs filter-process
 	required = true
 [interactive]
-	diffFilter = delta
+	diffFilter = delta --color-only
 [delta]
 	navigate = true
 	side-by-side = true
