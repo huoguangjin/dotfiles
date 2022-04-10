@@ -1,6 +1,4 @@
 
-export EDITOR=vim
-
 export LD_LIBRARY_PATH=/usr/local/lib
 
 # sublime text
