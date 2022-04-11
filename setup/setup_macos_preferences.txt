@@ -18,6 +18,7 @@ Preferences > Mission Control > Hot Corners...
 
 
 Preferences > Dock & Menu Bar > Dock & Menu Bar > Dock > Size
+Preferences > Dock & Menu Bar > Dock & Menu Bar > Position on screen > Right
 Preferences > Dock & Menu Bar > Dock & Menu Bar > Minimize windows using > Scale effect
 Preferences > Dock & Menu Bar > Dock & Menu Bar > Minimize windows into application icon
 Preferences > Dock & Menu Bar > Dock & Menu Bar > Automatically hide and show the Dock
@@ -43,7 +44,8 @@ Preferences > Keyboard > Input Sources > Automatically switch to a document's in
 Preferences > Keyboard > Dictation > Off
 
 Preferences > Keyboard > Shortcuts > Launchpad & Dock > Turn Dock Hiding On/Off > none
-Preferences > Keyboard > Shortcuts > Mission Control > cmd + F1
+Preferences > Keyboard > Shortcuts > Mission Control > Mission Control > cmd + F1
+Preferences > Keyboard > Shortcuts > Mission Control > Show Desktop > cmd + F2
 Preferences > Keyboard > Shortcuts > Mission Control > Turn Do Not Disturb On/Off > none
 Preferences > Keyboard > Shortcuts > Mission Control > Move left a space > fn + A
 Preferences > Keyboard > Shortcuts > Mission Control > Move right a space > fn + S
@@ -55,14 +57,13 @@ Preferences > Keyboard > Shortcuts > Keyboard > Move focus to the Dock > cmd + F
 Preferences > Keyboard > Shortcuts > Keyboard > Move focus to active or next window > option + `
 Preferences > Keyboard > Shortcuts > Keyboard > Move focus to the window toolbar > none
 Preferences > Keyboard > Shortcuts > Keyboard > Move focus to the floating window > none
-Preferences > Keyboard > Shortcuts > Keyboard > Move focus to next window > none
 Preferences > Keyboard > Shortcuts > Keyboard > Move focus to status menus > cmd + F4
-Preferences > Keyboard > Shortcuts > Input Sources > Select the previous input source > control + space
-Preferences > Keyboard > Shortcuts > Input Sources > Select next source in Input menu > none
+Preferences > Keyboard > Shortcuts > Input Sources > Select the previous input source > none
+Preferences > Keyboard > Shortcuts > Input Sources > Select next source in Input menu > cmd + space
 Preferences > Keyboard > Shortcuts > Screenshots > Save picture of screen as a file > none
 Preferences > Keyboard > Shortcuts > Screenshots > Copy picture of screen to the clipboard > none
 Preferences > Keyboard > Shortcuts > Screenshots > Save picture of selected area as a file > cmd + shift + F4
-Preferences > Keyboard > Shortcuts > Screenshots > Copy picture of selrea to the clipboard > cmd + shift + F3
+Preferences > Keyboard > Shortcuts > Screenshots > Copy picture of selected to the clipboard > cmd + shift + F3
 Preferences > Keyboard > Shortcuts > Screenshots > Screenshot and recording options > cmd + shift + F5
 Preferences > Keyboard > Shortcuts > Services > Convert Text to Full Width > none
 Preferences > Keyboard > Shortcuts > Services > Convert Text to Half Width > none
@@ -70,17 +71,20 @@ Preferences > Keyboard > Shortcuts > Services > Open man Page in Terminal > none
 Preferences > Keyboard > Shortcuts > Services > Search man Page Index in Terminal > none
 Preferences > Keyboard > Shortcuts > Services > 有道词典 > fn + D
 Preferences > Keyboard > Shortcuts > Services > ...
-Preferences > Keyboard > Shortcuts > Spotlight > Show Spotlight Search
-Preferences > Keyboard > Shortcuts > Spotlight > Show Finder Search window
+Preferences > Keyboard > Shortcuts > Spotlight > Show Spotlight Search > none
+Preferences > Keyboard > Shortcuts > Spotlight > Show Finder Search window > none
 Preferences > Keyboard > Shortcuts > Accessibility > none
+Preferences > Keyboard > Shortcuts > Use keyboard navigation to move focus between controls
 
 
 Preferences > Trackpad > Point & Click > Tap to click
 Preferences > Trackpad > Point & Click > Tracking speed
+Preferences > Trackpad > Point & Click > Click > Light
+Preferences > Trackpad > Point & Click > Silent clicking
 
-Preferences  > Trackpad > More Gestures > Notification Center
-Preferences  > Trackpad > More Gestures > Mission Control
-Preferences  > Trackpad > More Gestures > App Expose
+Preferences > Trackpad > More Gestures > Notification Center
+Preferences > Trackpad > More Gestures > Mission Control
+Preferences > Trackpad > More Gestures > App Expose
 
 
 Preferences > Accessibility > Display > Display > Reduce motion
