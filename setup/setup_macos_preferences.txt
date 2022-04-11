@@ -14,6 +14,7 @@ Preferences > Language & Region > General > 24-Hour Time
 
 
 Preferences > Mission Control > Keyboard and Mouse Shortcuts
+Preferences > Mission Control > Group windows by application
 Preferences > Mission Control > Hot Corners...
 
 
@@ -39,6 +40,7 @@ Preferences > Keyboard > Text > Correct spelling automatically
 Preferences > Keyboard > Text > Capitalize words automatically
 Preferences > Keyboard > Text > Add period with double-space
 
+Preferences > Keyboard > Input Sources > Add > Others > Unicode Hex Input
 Preferences > Keyboard > Input Sources > Automatically switch to a document's input source
 
 Preferences > Keyboard > Dictation > Off
