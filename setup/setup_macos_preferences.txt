@@ -97,3 +97,12 @@ Preferences > Accessibility > Pointer Control > Mouse & Trackpad > Trackpad Opti
 
 Preferences > Sharing > Computer Name
 Preferences > Sharing > AirPlay Receiver
+
+
+Finder > Preferences > General > Show these items on the desktop > Connected servers
+Finder > Preferences > Advanced > Show all filename extensions
+Finder > Preferences > Advanced > Show warning before changing an extension
+Finder > Preferences > Advanced > Remove items from the Trash after 30 days
+Finder > Preferences > Advanced > Keep folders on top > In windows when sorting by name
+Finder > Preferences > Advanced > When performing a search > Search the Current Folder
+Finder > View > Show Path Bar
