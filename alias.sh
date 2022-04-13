@@ -24,6 +24,7 @@ alias cdnote="cd ~/note"
 
 alias cp="cp -i"
 alias mv="mv -i"
+alias mkdir="mkdir -p"
 alias rm="safe-rm"
 
 alias ls="ls -G"
@@ -33,42 +34,34 @@ alias llg="ll | grep"
 alias lt="ls -lht"
 alias ll="ls -lh"
 alias la="ls -A"
+alias lsa="ls -A"
 alias lla="ls -lhA"
 alias l="cd -"
-alias mkdir="mkdir -p"
-# alias tree="find . -print | sed -e "s;[^/]*/;|___;g;s;___|; |;g"
-
-alias pc="pbcopy"
-alias pp="pbpaste"
-
-alias ipconfig="ifconfig"
-alias ping="ping -c 5 "
-alias xargs="xargs -tp"
 
 alias v="vim"
-alias vi="vim"
-alias r="ranger -r $DOTFILES/.ranger"
-# alias open="open ."
-# alias item="open -a iTerm"
-# alias st="open -a Sublime\ Text"
-# alias chrome="open -a Google\ Chrome"
-alias ip="ifconfig en1"
+alias r='ranger -r $DOTFILES/.ranger'
+alias f="command fd"
+
+alias grep="grep --color=auto -iI"
+alias ping="ping -c 5 "
+alias curl="curl -m 10"
+alias xargs="xargs -tp"
+
 alias axel="axel -a"
+alias aria="aria2c --split=8 --max-concurrent-downloads=8 --max-connection-per-server=8"
 alias cafe="caffeinate -ut"
+
+alias ipconfig="ifconfig"
+alias ip="ifconfig en1"
+
+alias pc="clipcopy"
+alias pp="clippaste"
+
 alias tree="tree -CN"
 alias tree2="tree -L 2"
 alias tree3="tree -L 3"
 alias tree4="tree -L 4"
 #alias sd="sudo $(history \!\!)"
-alias f="command fd"
-# -i: ignore case, -I: ignore binary-file
-alias grep="grep --color="auto" -iI"
-
-alias adbresart="adb kill-server; echo '>> adb restart..'; adb start-server;"
-alias killgradle="[[ -e ./gradlew ]] && ./gradlew --stop"
-# alias rn="react-native"
-# alias rnand="react-native run-android"
-# alias vimbp="vim ~/.bash_profile"
 
 alias py="python"
 alias py2="python2"
@@ -85,22 +78,15 @@ alias gcp="git cherry-pick"
 alias gcl="git clean -xdfn"
 alias gitclone1="git clone --depth=1"
 alias glg="git log --graph --decorate --abbrev-commit --all"
-alias gls="git log --graph --stat" # -p: perview
+alias gls="git log --graph --stat" # -p: preview
 alias grb="git rebase"
 alias grs="git restore"
 alias grss="git restore --staged"
 alias gsh="git show"
 alias gst="git status" # -s: summary
 
-alias cnpm="npm --registry=https://registry.npm.taobao.org --cache=$HOME/.npm/.cache/cnpm --disturl=https://npm.taobao.org/dist --userconfig=$HOME/configfile/.cnpmrc"
-
-alias -s jar="java -jar"
-
-alias kill_ds_store="find . -type f -name '.DS_Store' -ls -delete"
-
 alias sst="svn status"
 alias slg="svn log"
-# alias slg="svn log $(svn info --show-item url)"
 alias sfa="svn up"
 alias scu="svn cleanup --remove-unversioned"
 alias srv="svn revert -R"
@@ -116,7 +102,14 @@ alias -g \\t="| tee"
 alias -g \\v="| vim -"
 alias -g \\s="2>&1"
 
+alias -s jar="java -jar"
 alias -s zip="unzip -l"
 alias -s rar="unrar l"
 alias -s tar="tar tf"
 alias -s gz="tar tf"
+
+alias httpserver="npx http-server"
+alias adbresart="adb kill-server; echo '>> adb restart..'; adb start-server;"
+alias cnpm="npm --registry=https://registry.npmmirror.com"
+alias gradlestop="[[ -e ./gradlew ]] && ./gradlew --stop"
+alias kill_ds_store="find . -type f -name '.DS_Store' -ls -delete"
