@@ -98,6 +98,9 @@ Preferences > Accessibility > Pointer Control > Mouse & Trackpad > Trackpad Opti
 Preferences > Sharing > Computer Name
 Preferences > Sharing > AirPlay Receiver
 
+Preferences > Siri > Enable Ask Siri > none
+Preferences > Siri > Show Siri in menu bar > none
+
 
 Finder > Preferences > General > Show these items on the desktop > Connected servers
 Finder > Preferences > Advanced > Show all filename extensions
