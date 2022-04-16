@@ -19,8 +19,7 @@
           "from": {
             "key_code": "delete_or_backspace",
             "modifiers": {
-              "mandatory": ["shift"],
-              "optional": ["any"]
+              "mandatory": ["shift"]
             }
           },
           "to": [
