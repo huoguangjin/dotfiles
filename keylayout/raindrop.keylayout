@@ -18,9 +18,9 @@
             <modifier keys="caps"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="4">
-            <modifier keys="anyShift caps? option? command? control"/>
-            <modifier keys="shift? caps? anyOption command? control"/>
-            <modifier keys="caps? anyOption? command? control"/>
+            <modifier keys="anyShift caps? anyOption? command? anyControl"/>
+            <modifier keys="anyShift? caps? anyOption command? anyControl"/>
+            <modifier keys="caps? anyOption? command? anyControl"/>
         </keyMapSelect>
     </modifierMap>
     <keyMapSet id="ANSI">
