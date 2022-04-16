@@ -4,13 +4,6 @@
 <keyboard group="0" id="666" name="raindrop" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="m"/>
-        <layout first="18" last="18" mapSet="JIS" modifiers="m"/>
-        <layout first="21" last="23" mapSet="JIS" modifiers="m"/>
-        <layout first="30" last="30" mapSet="JIS" modifiers="m"/>
-        <layout first="194" last="194" mapSet="JIS" modifiers="m"/>
-        <layout first="197" last="197" mapSet="JIS" modifiers="m"/>
-        <layout first="200" last="201" mapSet="JIS" modifiers="m"/>
-        <layout first="206" last="207" mapSet="JIS" modifiers="m"/>
     </layouts>
     <modifierMap id="m" defaultIndex="4">
         <keyMapSelect mapIndex="0">
@@ -468,59 +461,4 @@
             <key code="126" output="&#x001E;"/>
         </keyMap>
     </keyMapSet>
-    <keyMapSet id="JIS">
-        <keyMap index="0" baseMapSet="ANSI" baseIndex="0">
-            <key code="24" output="^"/>
-            <key code="30" output="["/>
-            <key code="33" output="@"/>
-            <key code="39" output=":"/>
-            <key code="42" output="]"/>
-            <key code="93" output="¥"/>
-            <key code="94" output="_"/>
-            <key code="95" output=","/>
-            <key code="102" output=" "/>
-            <key code="104" output=" "/>
-        </keyMap>
-        <keyMap index="1" baseMapSet="ANSI" baseIndex="1">
-            <key code="19" output="&#x0022;"/>
-            <key code="22" output="&#x0026;"/>
-            <key code="24" output="~"/>
-            <key code="25" output=")"/>
-            <key code="26" output="&#x0027;"/>
-            <key code="27" output="="/>
-            <key code="28" output="("/>
-            <key code="29" output="0"/>
-            <key code="30" output="{"/>
-            <key code="33" output="`"/>
-            <key code="39" output="*"/>
-            <key code="41" output="+"/>
-            <key code="42" output="}"/>
-            <key code="93" output="|"/>
-            <key code="94" output="_"/>
-            <key code="95" output=","/>
-            <key code="102" output=" "/>
-            <key code="104" output=" "/>
-        </keyMap>
-        <keyMap index="2" baseMapSet="ANSI" baseIndex="2">
-            <key code="24" output="^"/>
-            <key code="30" output="["/>
-            <key code="33" output="@"/>
-            <key code="39" output=":"/>
-            <key code="42" output="]"/>
-            <key code="93" output="\"/>
-            <key code="94" output="_"/>
-            <key code="95" output=","/>
-            <key code="102" output=" "/>
-            <key code="104" output=" "/>
-        </keyMap>
-        <keyMap index="4" baseMapSet="ANSI" baseIndex="4">
-            <key code="93" output="|"/>
-            <key code="94" output="_"/>
-            <key code="95" output=","/>
-            <key code="102" output=" "/>
-            <key code="104" output=" "/>
-        </keyMap>
-    </keyMapSet>
-    <actions>
-    </actions>
 </keyboard>
