@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -x
 
 # https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 osascript -e 'tell application "System Preferences" to quit'
