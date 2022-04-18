@@ -16,4 +16,4 @@ source $DOTFILES/fzf_fun.sh
 # key binding
 bindkey '^k' push-line-or-edit
 
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$DOTFILES/bin"
