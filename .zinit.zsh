@@ -1,3 +1,4 @@
+export DOTFILES=${DOTFILES:=${0:h}}
 
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
@@ -30,8 +31,9 @@ zinit light zdharma-continuum/null
 
 zinit snippet OMZ::lib/termsupport.zsh
 
-zinit ice id-as'auto'
-zinit snippet $HOME/dotfiles/breeze.zsh-theme
+zinit ice id-as
+zinit snippet "$DOTFILES"/breeze.zsh-theme
+
 
 zinit wait lucid light-mode for \
   OMZ::lib/clipboard.zsh \
@@ -55,4 +57,4 @@ zinit wait lucid light-mode for \
   zsh-users/zsh-completions \
 
 
-[ -f $HOME/dotfiles/init.zsh ] && source $HOME/dotfiles/init.zsh
+source "$DOTFILES"/init.zsh
