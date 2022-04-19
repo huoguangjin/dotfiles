@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-export DOTFILES=$(cd "$(dirname "$0")/.."; pwd -P)
+DOTFILES=$(cd "$(dirname "$0")/.."; pwd -P)
 
 add_git_config_if_absent() {
   local name=$1
@@ -10,5 +10,5 @@ add_git_config_if_absent() {
     || git config --global --add "$name" "$value"
 }
 
-add_git_config_if_absent include.path $DOTFILES/.gitconfig
-add_git_config_if_absent core.excludesfile $DOTFILES/.gitignore_global
+add_git_config_if_absent include.path "$DOTFILES"/.gitconfig
+add_git_config_if_absent core.excludesfile "$DOTFILES"/.gitignore_global
