@@ -14,14 +14,16 @@ setopt interactivecomments
 zinit ice id-as="brew" \
   atclone='/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 if [[ -x /opt/homebrew/bin/brew ]]; then
-  /opt/homebrew/bin/brew shellenv | tee brew.zsh
+  /opt/homebrew/bin/brew shellenv | tee brew.zsh && source brew.zsh
+  echo fpath+="$(brew --prefix)/share/zsh/site-functions" >> brew.zsh
 elif [[ -x /opt/local/bin/brew ]]; then
   /opt/local/bin/brew shellenv | tee brew.zsh
 elif [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
   /home/linuxbrew/.linuxbrew/bin/brew shellenv | tee brew.zsh
 else
   echo > brew.zsh
-fi' \
+fi
+source brew.zsh' \
   atpull='%atclone' run-atpull \
   nocompile'!'
 zinit light zdharma-continuum/null
@@ -44,10 +46,6 @@ zinit wait lucid light-mode for \
   \
   as"completion" \
   OMZ::plugins/adb/_adb \
-  as"completion" \
-  OMZ::plugins/ag/_ag \
-  as"completion" \
-  OMZ::plugins/fd/_fd \
   \
   atinit"zicompinit; zicdreplay" \
   zdharma-continuum/fast-syntax-highlighting \
