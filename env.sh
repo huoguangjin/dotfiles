@@ -1,8 +1,4 @@
-
-export LD_LIBRARY_PATH=/usr/local/lib
-
-# sublime text
-export SUBL="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+# export LD_LIBRARY_PATH=/usr/local/lib
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
@@ -48,10 +44,6 @@ export PATH=$PATH:$ANDROID_NDK
 export ANDROID_BUILD_TOOL=$ANDROID_HOME/build-tools/current
 export PATH=$PATH:$ANDROID_BUILD_TOOL
 
-# android sdk cmake
-# export CMAKE_HOME=$ANDROID_HOME/cmake/3.10.2.4988404
-# export PATH=$CMAKE_HOME/bin:$PATH
-
 # flutter
 export FLUTTER_HOME=$HOME/flutter/flutter/bin
 export PATH=$PATH:$FLUTTER_HOME
@@ -62,23 +54,5 @@ export BINARYEN=$BIN_DIR/binaryen
 export LLVM_ROOT=$BIN_DIR/emscripten/libexec/llvm/bin
 export BINARYEN_ROOT=$BIN_DIR/binaryen
 
-# # sdkman
-# export SDKMAN_DIR="$HOME/.sdkman"
-# export SDKMAN_CANDIDATES_DIR="$SDKMAN_DIR/candidates"
-# export sdkman_debug_mode=true
-#
-# # kotlin
-# export KOTLIN_HOME=$SDKMAN_CANDIDATES_DIR/kotlin/current
-# export PATH=$PATH:$KOTLIN_HOME/bin
-#
-# # groovy
-# export GROOVY_HOME=$SDKMAN_CANDIDATES_DIR/groovy/current
-# export PATH=$PATH:$GROOVY_HOME/bin
-
-# qt5.8
-export QT_HOME=$HOME/tools/Qt5.8.0/5.8/clang_64
-export PATH=$PATH:$QT_HOME/bin
-
 # chromium
 export PATH=$PATH:$HOME/chromium/depot_tools
-
