@@ -57,4 +57,9 @@ zinit wait lucid light-mode for \
   zsh-users/zsh-completions \
 
 
+zinit wait lucid id-as depth'1' light-mode for \
+  hlissner/zsh-autopair \
+  skywind3000/z.lua \
+
+
 source "$DOTFILES"/init.zsh
