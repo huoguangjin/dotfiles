@@ -11,6 +11,8 @@ export VIMINIT="source $DOTFILES/vim/vimrc"
 export FZF_BASE=${commands[fzf]}
 export FZF_ALT_C_COMMAND="command fd"
 
+export _ZL_DATA="$HOME/.cache/.zlua"
+
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 export RIPGREP_CONFIG_PATH=$DOTFILES/.ripgreprc
