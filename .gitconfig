@@ -21,10 +21,11 @@
 [alias]
 	cl = clean -xdf
 	d = difftool
+	ll = log --graph --format=format:'%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(bold cyan)%ad%C(reset) %C(magenta)%an%C(reset) %C(white)%s%C(reset)'
 	sm = submodule update --init --recursive
 	ud = rebase --committer-date-is-author-date -i
 [log]
-	date = format-local:%Y/%m/%d %H:%M %a
+	date = format-local:%y/%m/%d %H:%M %a
 [format]
 	pretty = format:%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(bold cyan)%ad%C(reset) %C(bold blue)(%ar)%C(reset) %C(magenta)%an%C(reset)%n%C(white)%s%C(reset)
 [merge]
