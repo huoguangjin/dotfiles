@@ -8,6 +8,8 @@ map q: :q
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
 nnoremap <leader>x :x<cr>
+cmap qq q!
+cmap q1 q!
 
 
 nnoremap <leader>j 5<c-e>
