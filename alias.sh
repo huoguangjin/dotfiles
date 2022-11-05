@@ -73,6 +73,7 @@ alias ipy3="ipython3"
 alias g="git"
 alias gd="git diff"
 alias gf="git fetch"
+alias gfa="git fetch --all"
 alias gco="git checkout"
 alias gcp="git cherry-pick"
 alias gcl="git clean -xdfn"
@@ -91,6 +92,7 @@ alias sfa="svn up"
 alias scu="svn cleanup --remove-unversioned"
 alias srv="svn revert -R"
 
+alias ppath='echo -e ${PATH//:/\\n}'
 alias distinct="cat -n | sort -uk2 | sort -nk1 | cut -f2-"
 
 alias -g \\g="| grep"
@@ -101,6 +103,7 @@ alias -g \\c="| clipcopy"
 alias -g \\t="| tee"
 alias -g \\v="| vim -"
 alias -g \\s="2>&1"
+alias -g \\hh="--help"
 
 alias -s jar="java -jar"
 alias -s zip="unzip -l"
