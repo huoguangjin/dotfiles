@@ -57,6 +57,11 @@ zinit wait lucid light-mode for \
   zsh-users/zsh-completions \
 
 
+zinit wait lucid id-as from'gh-r' light-mode for \
+  sbin'**/bat -> bat' @sharkdp/bat \
+  sbin'**/delta -> delta' dandavison/delta \
+
+
 zinit wait lucid id-as depth'1' light-mode for \
   hlissner/zsh-autopair \
   skywind3000/z.lua \
