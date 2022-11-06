@@ -3,6 +3,8 @@ export LC_ALL=en_US.UTF-8
 
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
+export CDPATH=.:~
+
 export EDITOR=vim
 
 export VIMINIT="source $DOTFILES/vim/vimrc"
