@@ -5,4 +5,3 @@ on run {}
     set target of (make new Finder window) to dir
   end tell
 end run
-
