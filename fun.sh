@@ -1,10 +1,3 @@
-j() {
-  if [[ $# -eq 0 ]]; then
-    _zlua -I .
-  else
-    _zlua -I "$@"
-  fi
-}
 
 bak() {
   cp -ri "$1"{,.bak}

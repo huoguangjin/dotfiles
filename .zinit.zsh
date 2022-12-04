@@ -61,11 +61,13 @@ zinit wait lucid light-mode for \
 zinit wait lucid id-as from'gh-r' light-mode for \
   sbin'**/bat -> bat' @sharkdp/bat \
   sbin'**/delta -> delta' dandavison/delta \
+  atclone"./zoxide init --cmd j zsh > init.zsh" \
+  atpull"%atclone" src"init.zsh" nocompile'!' \
+  sbin'**/zoxide -> zoxide' ajeetdsouza/zoxide \
 
 
 zinit wait lucid id-as depth'1' light-mode for \
   hlissner/zsh-autopair \
-  skywind3000/z.lua \
 
 
 source "$DOTFILES"/init.zsh
