@@ -11,6 +11,7 @@ setopt multios
 
 setopt interactivecomments
 
+zinit light zdharma-continuum/zinit-annex-bin-gem-node
 
 zinit ice id-as="brew" \
   atclone='/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
