@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -eu
 
 DOTFILES="$(dirname "$0")/.."
 
-ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-mkdir -p "$(dirname "$ZINIT_HOME")"
-git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+NO_INPUT=1 NO_ANNEXES=1 NO_EDIT=1 NO_TUTORIAL=1 \
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 rsync -arcv \
   -b --backup-dir "$DOTFILES"/backup \
   "$DOTFILES"/.zshrc \
   "$HOME"/.zshrc
 
-zsh
+exec zsh
