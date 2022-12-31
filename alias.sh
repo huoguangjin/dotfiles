@@ -72,6 +72,8 @@ alias ipy3="ipython3"
 
 alias g="git"
 alias gd="git diff"
+alias gdh="git diff HEAD"
+alias gds="git diff --staged"
 alias gf="git fetch"
 alias gfa="git fetch --all"
 alias gco="git checkout"
