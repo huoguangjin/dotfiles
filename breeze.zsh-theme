@@ -13,7 +13,7 @@ function git_prompt_info() {
 }
 
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
-local user_host="%B%(!.%{$fg[red]%}.%{$fg[green]%})%n@%m%{$reset_color%}%b "
+local user_host="%B%(!.%{$fg[red]%}.%{$fg[green]%})%n@%M%{$reset_color%}%b "
 local current_dir="%B%{$fg[blue]%}%~%{$reset_color%}%b "
 
 local vcs_branch='$(git_prompt_info)'
