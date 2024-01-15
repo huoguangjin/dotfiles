@@ -30,6 +30,7 @@ source brew.zsh' \
   nocompile'!'
 zinit light zdharma-continuum/null
 
+zinit snippet OMZ::lib/functions.zsh
 zinit snippet OMZ::lib/termsupport.zsh
 
 zinit ice id-as
