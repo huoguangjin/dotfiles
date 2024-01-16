@@ -39,6 +39,8 @@
 [difftool]
 	prompt = false
 	trustExitCode = true
+[diff "lfs"]
+	textconv = cat
 [pull]
 	ff = only
 	rebase = true
