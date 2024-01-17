@@ -28,3 +28,7 @@ tx.sh
 # Local
 .oh-my-zsh
 .ipython/**/history.sqlite
+
+# python
+__pycache__
+*.pyc
