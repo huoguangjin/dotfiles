@@ -127,3 +127,10 @@ alias adbs='adb shell "screencap -p >&1" > screenshot_$(date +"%m%d_%H%M").png'
 alias cnpm="npm --registry=https://registry.npmmirror.com"
 alias gradlestop="[[ -e ./gradlew ]] && ./gradlew --stop"
 alias kill_ds_store="find . -type f -name '.DS_Store' -ls -delete"
+
+alias sst="svn status"
+alias srv="svn revert -R"
+alias sup="svn update --set-depth infinity"
+alias scu="svn cleanup"
+alias scua="svn cleanup --remove-unversioned"
+alias sco="svn checkout --depth empty"
