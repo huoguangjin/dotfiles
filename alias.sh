@@ -115,6 +115,15 @@ alias -s gz="tar tf"
 
 alias httpserver="npx http-server"
 alias adbresart="adb kill-server; echo '>> adb restart..'; adb start-server;"
+alias adbl="adb logcat"
+alias adblg="adb logcat | grep"
+alias adbc="adb logcat -c"
+alias adbf='adb logcat > log_$(date +"%m%d_%H%M%S").txt'
+alias adbt='adb logcat | tee log_$(date +"%m%d_%H%M%S").txt'
+alias adbtg='adb logcat | tee log_$(date +"%m%d_%H%M%S").txt | grep'
+alias adbfc="adbc && adbf"
+alias adbcf="adbfc"
+alias adbs='adb shell "screencap -p >&1" > screenshot_$(date +"%m%d_%H%M").png'
 alias cnpm="npm --registry=https://registry.npmmirror.com"
 alias gradlestop="[[ -e ./gradlew ]] && ./gradlew --stop"
 alias kill_ds_store="find . -type f -name '.DS_Store' -ls -delete"
