@@ -18,7 +18,9 @@ alias d="dirs -v | head"
 
 alias cd..="cd .."
 alias cd...="cd ../.."
+alias cddl="cd ~/download"
 alias cdtmp="cd ~/tmp"
+alias cdlog="cd ~/log"
 alias cddot="cd ~/dotfiles"
 alias cdnote="cd ~/note"
 
