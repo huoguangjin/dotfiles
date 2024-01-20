@@ -65,6 +65,9 @@ zinit wait lucid id-as from'gh-r' light-mode for \
   atclone"./zoxide init --cmd j zsh > init.zsh" \
   atpull"%atclone" src"init.zsh" nocompile'!' \
   sbin'**/zoxide -> zoxide' ajeetdsouza/zoxide \
+  sbin'**/lazygit' jesseduffield/lazygit \
+  atclone'cp -vf completions/exa.zsh _exa'  \
+  sbin'**/exa -> exa' ogham/exa \
 
 
 zinit wait lucid id-as depth'1' light-mode for \
