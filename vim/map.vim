@@ -19,10 +19,10 @@ nnoremap <leader>k 5<c-y>
 " delete without saving to register
 nnoremap <leader>d "_d
 
-" copy paste
-map <leader>y "*yy
-vmap <leader>y "*y
-map <leader>p "*p
+" system clipboard
+map <leader>y "+yy
+vmap <leader>y "+y
+map <leader>p "+p
 
 
 " search
