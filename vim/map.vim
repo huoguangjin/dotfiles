@@ -90,6 +90,7 @@ nnoremap <leader>s :!subl %:p -a %:h<cr><cr>
 " reload vim config
 noremap <silent> <buffer> <leader>r :exe $VIMINIT<cr>
 " noremap <silent> <buffer> <leader>r :so $HOME/dotfiles/vim/vimrc<cr>
+noremap <leader>s :so $MYVIMRC<cr>
 
 
 " togglefold
