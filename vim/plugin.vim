@@ -1,7 +1,7 @@
 " https://github.com/junegunn/vim-plug
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '$HOME/.local/share/vim/plugged')
 
-" Plug 'doums/darcula'
+Plug 'doums/darcula'
 
 
 " Plug 'junegunn/fzf'
