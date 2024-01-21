@@ -39,6 +39,7 @@ set hlsearch " highlight search result
 set ignorecase " case insensitive when search
 set incsearch " smart match when typing on search
 set t_Co=256
+set shm-=S "show search count
 
 " fold
 set foldmethod=indent
