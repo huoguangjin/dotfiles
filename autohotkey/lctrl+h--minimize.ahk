@@ -1,0 +1,1 @@
+LCtrl & h::WinMinimize("A")
