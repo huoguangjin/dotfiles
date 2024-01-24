@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+set -uo pipefail
+
+# iTerm2 show notification after execute, `command + option + a` can do this
+"$@"
+
+printf "\033]9; $?: $@ \007"
