@@ -228,7 +228,13 @@ modal:bind('', '=', 'expand vertically', function()
   verticalExpand()
   deactivate()
 end)
+
 modal:bind('', '-', 'show grid', hs.grid.toggleShow)
+
+modal:bind('', '`', 'move to next screen', function()
+  local window = hs.window.focusedWindow()
+  window:moveToScreen(window:screen():next())
+end)
 
 modalContext.mainModal:bind({'cmd', 'alt', 'ctrl', 'shift'}, 'R', function()
   modalContext:deactivateAll()
