@@ -8,3 +8,5 @@ require 'ext.puzzle'
 
 local modalContext = require 'ext.modal_context'
 modalContext.mainModal:enter()
+
+require 'ext.launcher'
