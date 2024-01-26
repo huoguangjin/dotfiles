@@ -1,5 +1,6 @@
 let mapleader="\<space>"
 
+imap ;; <esc>
 map ; :
 map ' `
 map \ `
