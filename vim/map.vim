@@ -15,6 +15,9 @@ cmap q1 q!
 nnoremap <leader>j 5<c-e>
 nnoremap <leader>k 5<c-y>
 
+nnoremap [ <c-o>
+nnoremap ] <c-i>
+
 
 " delete without saving to register
 nnoremap <leader>d "_d
