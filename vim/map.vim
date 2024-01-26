@@ -78,19 +78,15 @@ map <F11> <c-w>v
 map <F12> <c-w>s
 
 
-" open current file path in Finder
-nnoremap <leader>o :!open %:h<cr><cr>
-" open current file using default App
-"nnoremap <leader>o :!open %<cr><cr>
-" open current file using subl
-nnoremap <leader>s :!subl %:p -a %:h<cr><cr>
+" open in Finder
+nnoremap <silent> <buffer> <leader>o :!open %:p:h<cr><cr>
+" open file and directory in vscode
+nnoremap <silent> <buffer> <leader>c :!code %:p -a %:p:h<cr><cr>
 " nnoremap <leader>s :w !sudo tee % <cr>
 
 
 " reload vim config
 noremap <silent> <buffer> <leader>r :exe $VIMINIT<cr>
-" noremap <silent> <buffer> <leader>r :so $HOME/dotfiles/vim/vimrc<cr>
-noremap <leader>s :so $MYVIMRC<cr>
 
 
 " togglefold
