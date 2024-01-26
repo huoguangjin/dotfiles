@@ -12,6 +12,10 @@ export PATH="$PATH:$HOME/.local/bin"
 # node
 export PATH=$PATH:$HOME/.yarn/bin
 
+# sdkman
+# export SDKMAN_DIR=$HOME/.sdkman
+# source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
 export JAVA_8=$(/usr/libexec/java_home -v1.8 2> /dev/null)
 export JAVA_11=$(/usr/libexec/java_home -v11 2> /dev/null)
 
@@ -43,6 +47,11 @@ export PATH=$PATH:$ANDROID_NDK
 # cat $ANDROID_BUILD_TOOL/source.properties
 export ANDROID_BUILD_TOOL=$ANDROID_HOME/build-tools/current
 export PATH=$PATH:$ANDROID_BUILD_TOOL
+
+# ruby
+# export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+# export GEM_HOME=$HOME/.gem
+# export PATH=$GEM_HOME/bin:$PATH
 
 # flutter
 export FLUTTER_HOME=$HOME/flutter/flutter/bin
