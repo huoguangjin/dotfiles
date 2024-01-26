@@ -2,6 +2,7 @@
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '$HOME/.local/share/vim/plugged')
 
 Plug 'doums/darcula'
+Plug 'junegunn/seoul256.vim'
 
 
 " Plug 'junegunn/fzf'
