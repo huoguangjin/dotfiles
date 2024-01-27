@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DOTFILES=$(cd "$(dirname "$0")/.."; pwd -P)
+DOTFILES=$(realpath "$0"/../..)
 
 add_git_config_if_absent() {
   local name=$1

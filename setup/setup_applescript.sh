@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DOTFILES=$(cd "$(dirname "$0")/.."; pwd -P)
+DOTFILES=$(realpath "$0"/../..)
 
 rsync -arcv \
   -b --backup-dir "$DOTFILES"/backup/applescript \

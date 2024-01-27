@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-export DOTFILES="$(dirname $0)/.."
+export DOTFILES=$(realpath "$0"/../..)
 
 mkdir -p /usr/local/{bin,lib}
 mkdir -p /opt/local/{bin,lib}
