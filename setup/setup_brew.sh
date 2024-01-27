@@ -24,3 +24,7 @@ brew shellenv
 # git clone --depth=1 https://github.com/Homebrew/homebrew-cask.git
 # git -C homebrew-core fetch --unshallow
 # git -C homebrew-cask fetch --unshallow
+
+#git -C $(brew --repo) gc --aggressive --prune
+#git -C $(brew --repo)/Library/Taps/homebrew/homebrew-core gc --aggressive --prune
+#git -C $(brew --repo)/Library/Taps/homebrew/homebrew-cask gc --aggressive --prune
