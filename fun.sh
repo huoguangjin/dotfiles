@@ -68,3 +68,12 @@ sip() {
   curl ifconfig.me "$@"
 }
 
+git_change_date() {
+  local d=$1
+  GIT_COMMITTER_DATE="$d" git commit --amend --no-edit --only --date="$d"
+}
+
+git_reset_date() {
+  # git rebase -i HEAD^ -x "git commit --amend --author 'name <name@mail.com>' --no-edit"
+  git rebase --committer-date-is-author-date -i "$@"
+}

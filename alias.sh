@@ -85,6 +85,7 @@ alias gitclone1="git clone --depth=1"
 alias glg="git log --graph --decorate --abbrev-commit --all"
 alias gls="git log --graph --stat" # -p: preview
 alias grb="git rebase"
+alias grc="git rebase --continue"
 alias grs="git restore"
 alias grss="git restore --staged"
 alias gsh="git show"
