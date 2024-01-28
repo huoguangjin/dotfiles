@@ -136,8 +136,16 @@
 	<false/>
 	<key>HideTab</key>
 	<true/>
+	<key>Hotkey</key>
+	<true/>
+	<key>HotkeyChar</key>
+	<integer>86</integer>
+	<key>HotkeyCode</key>
+	<integer>9</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>HotkeyModifiers</key>
+	<integer>1966379</integer>
 	<key>IRMemory</key>
 	<integer>4</integer>
 	<key>New Bookmarks</key>
