@@ -11,6 +11,7 @@ Preferences > Sound > Sound Effects > Play sound on startup
 
 
 Preferences > Language & Region > General > 24-Hour Time
+Preferences > Language & Region > General > Advanced > Dates > change(drag) date format to 2022/06/01/Wednesday
 
 
 Preferences > Mission Control > Keyboard and Mouse Shortcuts
@@ -24,6 +25,7 @@ Preferences > Dock & Menu Bar > Dock & Menu Bar > Minimize windows using > Scale
 Preferences > Dock & Menu Bar > Dock & Menu Bar > Minimize windows into application icon
 Preferences > Dock & Menu Bar > Dock & Menu Bar > Automatically hide and show the Dock
 Preferences > Dock & Menu Bar > Dock & Menu Bar > Automatically hide and show the menu bar on desktop
+Preferences > Dock & Menu Bar > Clock > Date Options > Show date > always
 
 Preferences > Dock & Menu Bar > Battery > Show Percentage
 
