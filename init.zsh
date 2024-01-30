@@ -11,9 +11,8 @@ source $DOTFILES/fun.sh
 
 source $DOTFILES/fzf_fun.sh
 
-[ -f $DOTFILES/tx.sh ] && source $DOTFILES/tx.sh
+source $DOTFILES/bind.zsh
 
-# key binding
-bindkey '^k' push-line-or-edit
+[ -f $DOTFILES/tx.sh ] && source $DOTFILES/tx.sh
 
 export PATH="$PATH:$DOTFILES/bin"
