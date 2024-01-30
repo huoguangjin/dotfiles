@@ -105,6 +105,75 @@ ft() {
   fi
 }
 
+fl() {
+  git ll --color=always "$@" |
+  fzf -m --reverse --no-sort --ansi \
+    --height 100% --min-height 20 --border \
+    --bind=ctrl-p:toggle-preview \
+    --preview 'grep -o "[a-f0-9]\{7,\}" <<< {} | xargs git show --stat --format=fuller --color=always' \
+    --bind='ctrl-m:execute:
+            git -c core.pager="LESS=-R delta --paging=always" show $(grep -o "[a-f0-9]\{7,\}" <<< {} | head -1)'
+}
+
+_gl() {
+  git ll --color=always "$@" |
+  fzf -m --reverse --no-sort --ansi \
+    --height 50% --min-height 20 --border \
+    --bind=ctrl-p:toggle-preview \
+    --preview 'grep -o "[a-f0-9]\{7,\}" <<< {} | xargs git show --stat --format=fuller --color=always' |
+  grep -o "[a-f0-9]\{7,\}"
+}
+
+fzf-gl-widget() {
+  local result=$(_gl "$@" | paste -sd " " -)
+  local ret=$?
+  zle reset-prompt
+  LBUFFER+=$result
+  return $ret
+}
+zle -N fzf-gl-widget
+bindkey '^G^L' fzf-gl-widget
+
+_gs() {
+  git -c color.status=always status -s "$@" |
+  fzf -m --nth 2..,.. \
+    --ansi \
+    --height 50% --min-height 20 --border \
+    --bind=ctrl-p:toggle-preview \
+    --bind='ctrl-/:change-preview-window(50%|hidden|)' \
+    --preview 'git diff --color=always -- {-1} | sed 1,4d; bat {-1}' |
+  cut -c4- | sed 's/.* -> //'
+}
+
+fzf-gs-widget() {
+  local result=$(_gs "$@" | paste -sd " " -)
+  local ret=$?
+  zle reset-prompt
+  LBUFFER+=$result
+  return $ret
+}
+zle -N fzf-gs-widget
+bindkey '^G^S' fzf-gs-widget
+
+fzf-history-widget () {
+	local selected num
+	setopt localoptions noglobsubst noposixbuiltins pipefail no_aliases 2> /dev/null
+	selected=($(fc -rl 1 | perl -ne 'print if !$seen{(/^\s*[0-9]+\**\s+(.*)/, $1)}++' |
+    FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} $FZF_DEFAULT_OPTS -n2..,.. --tiebreak=index --bind=ctrl-r:toggle-sort,ctrl-z:ignore $FZF_CTRL_R_OPTS
+    --query=${(qqq)LBUFFER} +m" $(__fzfcmd)))
+	local ret=$?
+	if [ -n "$selected" ]
+	then
+		num=$selected[1]
+		if [ -n "$num" ]
+		then
+			zle vi-fetch-history -n $num
+		fi
+	fi
+	zle reset-prompt
+	return $ret
+}
+
 # fda - cd to selected directory including hidden directories
 # fda() {
 #   local dir

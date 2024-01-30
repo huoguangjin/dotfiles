@@ -12,6 +12,8 @@ export VIMINIT="source $DOTFILES/vim/vimrc"
 # fzf
 export FZF_BASE=${commands[fzf]}
 export FZF_ALT_C_COMMAND="command fd"
+export FZF_CTRL_R_OPTS="--reverse"
+export FZF_COMPLETION_TRIGGER="\\"
 
 export HOMEBREW_NO_AUTO_UPDATE=1
 
