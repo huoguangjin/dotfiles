@@ -9,15 +9,17 @@ setopt pushd_ignore_dups
 setopt pushd_minus
 setopt multios
 
-setopt interactivecomments
+# setopt noclobber
+setopt interactive_comments
+setopt correct correctall
 
 zinit light zdharma-continuum/zinit-annex-bin-gem-node
 
 zinit ice id-as="brew" \
-  atclone='/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  atclone='HOMEBREW_INSTALL_FROM_API=1 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 if [[ -x /opt/homebrew/bin/brew ]]; then
-  /opt/homebrew/bin/brew shellenv | tee brew.zsh && source brew.zsh
-  echo fpath+="$(brew --prefix)/share/zsh/site-functions" >> brew.zsh
+  /opt/homebrew/bin/brew shellenv | tee brew.zsh
+  echo fpath+="$(/opt/homebrew/bin/brew --prefix)/share/zsh/site-functions" >> brew.zsh
 elif [[ -x /opt/local/bin/brew ]]; then
   /opt/local/bin/brew shellenv | tee brew.zsh
 elif [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
@@ -25,9 +27,8 @@ elif [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
 else
   echo > brew.zsh
 fi
-source brew.zsh' \
-  atpull='%atclone' run-atpull \
-  nocompile'!'
+' \
+  atpull='%atclone' run-atpull src"brew.zsh" nocompile'!'
 zinit light zdharma-continuum/null
 
 zinit snippet OMZ::lib/functions.zsh
@@ -44,30 +45,36 @@ zinit wait lucid light-mode for \
   OMZ::lib/key-bindings.zsh \
   OMZ::lib/spectrum.zsh \
   \
+  OMZ::plugins/copypath \
   OMZ::plugins/extract \
   OMZ::plugins/fancy-ctrl-z \
   OMZ::plugins/fzf \
+  \
+  MichaelAquilina/zsh-you-should-use \
   \
   as"completion" \
   OMZ::plugins/adb/_adb \
   \
   atinit"zicompinit; zicdreplay" \
   zdharma-continuum/fast-syntax-highlighting \
-  atload"_zsh_autosuggest_start" \
+  nocd atload"_zsh_autosuggest_start" \
   zsh-users/zsh-autosuggestions \
   blockf atpull'zinit creinstall -q .' \
   zsh-users/zsh-completions \
 
 
 zinit wait lucid id-as from'gh-r' light-mode for \
-  sbin'**/bat -> bat' @sharkdp/bat \
+  sbin'**/fd -> fd' @sharkdp/fd \
+  sbin'fzf' junegunn/fzf \
   sbin'**/delta -> delta' dandavison/delta \
   atclone"./zoxide init --cmd j zsh > init.zsh" \
   atpull"%atclone" src"init.zsh" nocompile'!' \
   sbin'**/zoxide -> zoxide' ajeetdsouza/zoxide \
   sbin'**/lazygit' jesseduffield/lazygit \
+  sbin'**/fx* -> fx' @antonmedv/fx \
   atclone'cp -vf completions/exa.zsh _exa'  \
   sbin'**/exa -> exa' ogham/exa \
+  # sbin'**/bat -> bat' @sharkdp/bat \
 
 
 zinit wait lucid id-as depth'1' light-mode for \
