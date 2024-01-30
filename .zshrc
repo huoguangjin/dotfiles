@@ -1,5 +1,5 @@
 # zmodload zsh/zprof
 
-source $HOME/dotfiles/.zinit.zsh
+source $HOME/dotfiles/zinit.zsh
 
 # zprof
