@@ -30,6 +30,7 @@ brew install pipx
 brew install jq
 brew install aria2
 brew install ouch
+brew install yazi
 
 brew install cmake
 brew install ninja

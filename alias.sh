@@ -41,7 +41,7 @@ alias lla="ls -lhA"
 alias l="cd -"
 
 alias v="vim"
-alias r='ranger -r $DOTFILES/.ranger'
+alias r="yazi"
 alias f="command fd"
 
 alias grep="grep --color=auto -iI"
