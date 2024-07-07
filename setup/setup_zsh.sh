@@ -3,8 +3,14 @@ set -eu
 
 DOTFILES=$(realpath "$0"/../..)
 
-NO_INPUT=1 NO_ANNEXES=1 NO_EDIT=1 NO_TUTORIAL=1 \
-  bash -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+typeset -Ag ZI
+typeset -gx ZI[HOME_DIR]="${HOME}/.config/zi"
+typeset -gx ZI[BIN_DIR]="${ZI[HOME_DIR]}/bin"
+command mkdir -p "$ZI[BIN_DIR]"
+
+compaudit | xargs chown -R "$(whoami)" "$ZI[HOME_DIR]"
+compaudit | xargs chmod -R go-w "$ZI[HOME_DIR]"
+command git clone https://github.com/z-shell/zi.git "$ZI[BIN_DIR]" -b main --single-branch
 
 rsync -arcv \
   -b --backup-dir "$DOTFILES"/backup \

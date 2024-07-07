@@ -1,7 +1,9 @@
 export DOTFILES=${DOTFILES:=${0:h}}
 
-ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-source "${ZINIT_HOME}/zinit.zsh"
+typeset -A ZI
+ZI[HOME_DIR]="${HOME}/.config/zi"
+ZI[BIN_DIR]="${ZI[HOME_DIR]}/bin"
+source "${ZI[BIN_DIR]}/zi.zsh"
 
 setopt auto_cd
 setopt auto_pushd
@@ -13,32 +15,32 @@ setopt multios
 setopt interactive_comments
 setopt correct correctall
 
-zinit light zdharma-continuum/zinit-annex-bin-gem-node
+zi light z-shell/z-a-bin-gem-node
 
-zinit ice id-as="brew" \
+zi ice id-as="brew" \
   atclone='HOMEBREW_INSTALL_FROM_API=1 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 if [[ -x /opt/homebrew/bin/brew ]]; then
-  /opt/homebrew/bin/brew shellenv | tee brew.zsh
-  echo fpath+="$(/opt/homebrew/bin/brew --prefix)/share/zsh/site-functions" >> brew.zsh
+  /opt/homebrew/bin/brew shellenv | tee init.zsh
+  echo fpath+="$(/opt/homebrew/bin/brew --prefix)/share/zsh/site-functions" >> init.zsh
 elif [[ -x /opt/local/bin/brew ]]; then
-  /opt/local/bin/brew shellenv | tee brew.zsh
+  /opt/local/bin/brew shellenv | tee init.zsh
 elif [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
-  /home/linuxbrew/.linuxbrew/bin/brew shellenv | tee brew.zsh
+  /home/linuxbrew/.linuxbrew/bin/brew shellenv | tee init.zsh
 else
-  echo > brew.zsh
+  echo > init.zsh
 fi
 ' \
-  atpull='%atclone' run-atpull src"brew.zsh" nocompile'!'
-zinit light zdharma-continuum/null
+  atpull='%atclone' run-atpull src"init.zsh" nocompile'!'
+zi light z-shell/null
 
-zinit snippet OMZ::lib/functions.zsh
-zinit snippet OMZ::lib/termsupport.zsh
+zi snippet OMZ::lib/functions.zsh
+zi snippet OMZ::lib/termsupport.zsh
 
-zinit ice id-as
-zinit snippet "$DOTFILES"/breeze.zsh-theme
+zi ice id-as
+zi snippet "$DOTFILES"/breeze.zsh-theme
 
 
-zinit wait lucid light-mode for \
+zi wait lucid light-mode for \
   OMZ::lib/clipboard.zsh \
   OMZ::lib/completion.zsh \
   OMZ::lib/history.zsh \
@@ -55,7 +57,7 @@ zinit wait lucid light-mode for \
   OMZ::plugins/adb/_adb \
 
 
-zinit wait lucid id-as from'gh-r' light-mode for \
+zi wait lucid id-as from'gh-r' light-mode for \
   sbin'**/fd -> fd' @sharkdp/fd \
   atclone"./fzf --zsh > init.zsh" \
   atpull"%atclone" src"init.zsh" nocompile'!' \
@@ -71,16 +73,16 @@ zinit wait lucid id-as from'gh-r' light-mode for \
   # sbin'**/bat -> bat' @sharkdp/bat \
 
 
-zinit wait lucid light-mode for \
-  atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
-  zdharma-continuum/fast-syntax-highlighting \
+zi wait lucid light-mode for \
+  atinit"ZI[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
+  z-shell/F-Sy-H \
   blockf \
   zsh-users/zsh-completions \
   nocd atload"!_zsh_autosuggest_start" \
   zsh-users/zsh-autosuggestions \
 
 
-zinit wait lucid id-as depth'1' light-mode for \
+zi wait lucid id-as depth'1' light-mode for \
   hlissner/zsh-autopair \
 
 
