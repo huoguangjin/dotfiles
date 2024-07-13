@@ -1,7 +1,7 @@
 
 alias f="command fdfind"
 
-export FZF_ALT_C_COMMAND="command fdfind"
+export FZF_ALT_C_COMMAND="command fdfind -td"
 
 
 alias adb="adb.exe"

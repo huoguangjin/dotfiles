@@ -48,23 +48,17 @@ zinit wait lucid light-mode for \
   OMZ::plugins/copypath \
   OMZ::plugins/extract \
   OMZ::plugins/fancy-ctrl-z \
-  OMZ::plugins/fzf \
   \
   MichaelAquilina/zsh-you-should-use \
   \
   as"completion" \
   OMZ::plugins/adb/_adb \
-  \
-  atinit"zicompinit; zicdreplay" \
-  zdharma-continuum/fast-syntax-highlighting \
-  nocd atload"_zsh_autosuggest_start" \
-  zsh-users/zsh-autosuggestions \
-  blockf atpull'zinit creinstall -q .' \
-  zsh-users/zsh-completions \
 
 
 zinit wait lucid id-as from'gh-r' light-mode for \
   sbin'**/fd -> fd' @sharkdp/fd \
+  atclone"./fzf --zsh > init.zsh" \
+  atpull"%atclone" src"init.zsh" nocompile'!' \
   sbin'fzf' junegunn/fzf \
   sbin'**/delta -> delta' dandavison/delta \
   atclone"./zoxide init --cmd j zsh > init.zsh" \
@@ -75,6 +69,15 @@ zinit wait lucid id-as from'gh-r' light-mode for \
   atclone'cp -vf completions/exa.zsh _exa'  \
   sbin'**/exa -> exa' ogham/exa \
   # sbin'**/bat -> bat' @sharkdp/bat \
+
+
+zinit wait lucid light-mode for \
+  atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
+  zdharma-continuum/fast-syntax-highlighting \
+  blockf \
+  zsh-users/zsh-completions \
+  nocd atload"!_zsh_autosuggest_start" \
+  zsh-users/zsh-autosuggestions \
 
 
 zinit wait lucid id-as depth'1' light-mode for \
