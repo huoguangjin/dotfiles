@@ -58,8 +58,8 @@ local function moveToGrid(gridXCount, gridYCount, gridX, gridY)
   local gridW = sf.w / gridXCount;
   local gridH = sf.h / gridYCount;
   window:setFrame({
-    x = gridW * gridX,
-    y = gridH * gridY,
+    x = sf.x + gridW * gridX,
+    y = sf.y + gridH * gridY,
     w = gridW,
     h = gridH,
   })
@@ -71,7 +71,7 @@ local function verticalExpand()
   saveWindowFrame(window, f)
 
   local sf = window:screen():frame()
-  f.y = 0
+  f.y = sf.y
   f.h = sf.h
   window:setFrame(f)
 end
@@ -229,7 +229,10 @@ modal:bind('', '=', 'expand vertically', function()
   deactivate()
 end)
 
-modal:bind('', '-', 'show grid', hs.grid.toggleShow)
+modal:bind('', '-', 'show grid', function()
+  hs.grid.toggleShow()
+  deactivate()
+end)
 
 modal:bind('', '`', 'move to next screen', function()
   local window = hs.window.focusedWindow()
