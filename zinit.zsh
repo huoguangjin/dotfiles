@@ -84,6 +84,7 @@ zi wait lucid light-mode for \
 
 zi wait lucid id-as depth'1' light-mode for \
   hlissner/zsh-autopair \
+  Aloxaf/fzf-tab \
 
 
 source "$DOTFILES"/init.zsh
