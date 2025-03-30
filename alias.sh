@@ -90,6 +90,8 @@ alias grs="git restore"
 alias grss="git restore --staged"
 alias gsh="git show"
 alias gst="git status" # -s: summary
+alias gs="git stash"
+alias gsp="git stash pop"
 
 alias sst="svn status"
 alias slg="svn log"
