@@ -7,6 +7,7 @@ map \ `
 map q: :q
 
 nnoremap <leader>w :w<cr>
+nnoremap <leader>W :w !sudo tee % <cr>
 nnoremap <leader>q :q<cr>
 nnoremap <leader>x :x<cr>
 cmap qq q!
@@ -26,7 +27,7 @@ nnoremap <leader>d "_d
 " system clipboard
 map <leader>y "+yy
 vmap <leader>y "+y
-map <leader>p "+p
+map <leader>p "+gP
 
 
 " search
@@ -86,7 +87,6 @@ map <F12> <c-w>s
 nnoremap <silent> <buffer> <leader>o :!open %:p:h<cr><cr>
 " open file and directory in vscode
 nnoremap <silent> <buffer> <leader>c :!code %:p -a %:p:h<cr><cr>
-" nnoremap <leader>s :w !sudo tee % <cr>
 
 
 " reload vim config
