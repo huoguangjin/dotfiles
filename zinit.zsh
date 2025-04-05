@@ -1,9 +1,9 @@
 export DOTFILES=${DOTFILES:=${0:h}}
 
-typeset -A ZI
-ZI[HOME_DIR]="${HOME}/.config/zi"
-ZI[BIN_DIR]="${ZI[HOME_DIR]}/bin"
-source "${ZI[BIN_DIR]}/zi.zsh"
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
 
 setopt auto_cd
 setopt auto_pushd
@@ -15,7 +15,7 @@ setopt multios
 setopt interactive_comments
 setopt correct correctall
 
-zi light z-shell/z-a-bin-gem-node
+zi light zdharma-continuum/zinit-annex-bin-gem-node
 
 zi ice id-as="brew" \
   atclone='HOMEBREW_INSTALL_FROM_API=1 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -31,7 +31,7 @@ else
 fi
 ' \
   atpull='%atclone' run-atpull src"init.zsh" nocompile'!'
-zi light z-shell/null
+zi light zdharma-continuum/null
 
 zi snippet OMZ::lib/functions.zsh
 zi snippet OMZ::lib/termsupport.zsh
@@ -52,9 +52,6 @@ zi wait lucid light-mode for \
   OMZ::plugins/fancy-ctrl-z \
   \
   MichaelAquilina/zsh-you-should-use \
-  \
-  as"completion" \
-  OMZ::plugins/adb/_adb \
 
 
 zi wait lucid id-as from'gh-r' light-mode for \
@@ -70,12 +67,12 @@ zi wait lucid id-as from'gh-r' light-mode for \
   sbin'**/fx* -> fx' @antonmedv/fx \
   atclone'cp -vf completions/exa.zsh _exa'  \
   sbin'**/exa -> exa' ogham/exa \
-  # sbin'**/bat -> bat' @sharkdp/bat \
+  sbin'**/bat -> bat' @sharkdp/bat \
 
 
 zi wait lucid light-mode for \
-  atinit"ZI[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
-  z-shell/F-Sy-H \
+  atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
+  zdharma-continuum/fast-syntax-highlighting \
   blockf \
   zsh-users/zsh-completions \
   nocd atload"!_zsh_autosuggest_start" \
